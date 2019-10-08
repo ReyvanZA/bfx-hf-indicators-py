@@ -9,6 +9,10 @@ This repo contains a collection of trading indicators implemented to support inc
 * `v()` - returns the current indicator value
 * `prev(n = 1)` - returns the nth previous indicator value
 
+#### Fix's
+Todo:
+  -Check for none where 0 was expected
+
 #### Indicator Seeding
 
 All indicators have a seed period which should be respected before valid data can be obtained, which can be read via `i.get_seed_period()`
