@@ -45,8 +45,9 @@ class CoppockCurve(Indicator):
     short = self._shortROC.v()
     long = self._longROC.v()
     
-    
-    if not isfinite(short) or not isfinite(long) or short is None or long is None:
+    if short is None or long is None:
+      return
+    if not isfinite(short) or not isfinite(long):
       return
     
     self._wma.add(short + long)
