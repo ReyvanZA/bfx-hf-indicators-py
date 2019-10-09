@@ -11,9 +11,10 @@ This repo contains a collection of trading indicators implemented to support inc
 
 #### Todo
   * Check for none where 0 was expected
-  * Add usage examples
-  * Add unit tests (Maybe)
   * Standardize input
+  * Add usage examples
+  * Add unit tests (merge from https://github.com/quadramadery/bfx-hf-indicators-py/tree/tests_vs_js/tests)
+  
 
 #### Indicator Seeding
 
