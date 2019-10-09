@@ -10,10 +10,10 @@ This repo contains a collection of trading indicators implemented to support inc
 * `prev(n = 1)` - returns the nth previous indicator value
 
 #### Todo
-  -Check for none where 0 was expected
-  -Add usage examples
-  -Add unit tests (Maybe)
-  -Standardize input
+  * Check for none where 0 was expected
+  * Add usage examples
+  * Add unit tests (Maybe)
+  * Standardize input
 
 #### Indicator Seeding
 
