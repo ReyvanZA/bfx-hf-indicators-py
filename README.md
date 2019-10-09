@@ -9,9 +9,11 @@ This repo contains a collection of trading indicators implemented to support inc
 * `v()` - returns the current indicator value
 * `prev(n = 1)` - returns the nth previous indicator value
 
-#### Fix's
-Todo:
+#### Todo
   -Check for none where 0 was expected
+  -Add usage examples
+  -Add unit tests (Maybe)
+  -Standardize input
 
 #### Indicator Seeding
 
