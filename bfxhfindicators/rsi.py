@@ -31,6 +31,7 @@ class RSI(Indicator):
     if self._prevInputValue != None:
       delta = v - self._prevInputValue
 
+
     return {
       'u': delta if delta > 0 else 0,
       'd': -delta if delta < 0 else 0
@@ -61,8 +62,8 @@ class RSI(Indicator):
     return self.v()
 
   def add(self, v):
-    if self._prevInputValue == None:
-      self._prevInputValue = v
+    #if self._prevInputValue == None:
+    #  self._prevInputValue = v
     
     ud = self._ud(v)
     self._uEMA.add(ud['u'])
@@ -71,6 +72,7 @@ class RSI(Indicator):
 
     if rs is not None:
       super().add(100 - (100 / (1 + rs)))
-      self._prevInputValue = v
+    
+    self._prevInputValue = v
 
     return self.v()
