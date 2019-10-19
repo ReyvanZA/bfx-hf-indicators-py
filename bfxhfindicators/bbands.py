@@ -45,10 +45,11 @@ class BollingerBands(Indicator):
     middle = self._sma.v()
     stddev = self._stddev.v()
 
-    super().add({
-      'top': middle + (self._m * stddev),
-      'middle': middle,
-      'bottom': middle - (self._m * stddev)
-    })
+    if middle is not None and stddev is not None:
+      super().add({
+        'top': middle + (self._m * stddev),
+        'middle': middle,
+        'bottom': middle - (self._m * stddev)
+      })
 
     return self.v()

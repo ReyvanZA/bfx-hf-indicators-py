@@ -36,9 +36,8 @@ class VO(Indicator):
     
     return super().update(((short - long) / long) * 100)
 
-  def add(self, candle):
-    vol = candle['vol']
-
+  def add(self, vol):
+  
     self._shortEMA.add(vol)
     self._longEMA.add(vol)
 
